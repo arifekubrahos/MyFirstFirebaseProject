@@ -44,7 +44,7 @@ public class ListPage extends AppCompatActivity {
 
 
         //database bağlantımızı kuruyoruz
-        DatabaseReference dbRef= FirebaseDatabase.getInstance().getReference().child(config.android_id);
+        DatabaseReference dbRef= FirebaseDatabase.getInstance().getReference().child("kullanıcılar");
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
