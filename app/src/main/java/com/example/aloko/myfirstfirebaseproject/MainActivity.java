@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("myresult",result);
 
                     //firebase de referance oluşturduk database imize ulaşmak için
-                    DatabaseReference ddRef= FirebaseDatabase.getInstance().getReference().child(config.android_id);
+                    DatabaseReference ddRef= FirebaseDatabase.getInstance().getReference().child("kullanıcılar");
                     Model model= new Model();
                     //model bean classı oluşturup bi model nesne oluşturuyoruz her ayrı kullanıcı için
                     model.setName(name.getText().toString());
